@@ -1,0 +1,113 @@
+/* @font-face {
+    font-family: prajwol;
+    src: url(/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuLyfAZ9hiA.ttf);
+} */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Inter;
+}
+html , body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    width: 100%;
+    min-height:100vh;
+}
+nav{
+    position:fixed;
+    top:0;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    width:100%;
+    height:15vh;
+    padding:0vw 3vw;
+    mix-blend-mode: difference;
+    z-index: 9999;
+}
+.nav-left{
+    color:#fff;
+    font-size:1.5vw;
+    height:6vh;
+    overflow:hidden;
+}
+.nav-left:hover #logo{
+    margin-top:-6vh;
+}
+.nav-left h1{
+    transition:all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+}
+/*.nav-left:hover #logo{  
+    margin-top:-6vh;
+} */
+.nav-right{
+    color:#fff;
+    font-size:1vw;
+    height:4vh;
+    overflow:hidden;
+}
+.nav-right:hover #nav-content{
+    margin-top:-4.2vh;  
+} 
+.nav-right h2{
+    transition:all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+}
+/* part 2 of making animations */
+#page-1{
+    width:100%;
+    height:100vh;
+    background-color:#000;
+}
+.page-content-1{
+    display:flex;
+    align-items: start;
+    justify-content: center;
+    width:100%;
+    height:inherit;
+    background-color: #000;
+}
+.rotate-div{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:200vw;
+    height:200vh;
+    gap:3vw;
+    background-color:#000;
+    /* scale:0.5; */
+}
+.row-div{
+    display:flex;
+    flex-direction: column;
+    gap:2vw;
+    width:calc(200vw/5);
+    height:100%;
+    background-color: #000;
+}
+.img-div{
+    width:100%;
+    height:calc(100%/4);
+    background-color:white;
+    border-radius:10px;
+    overflow:hidden;
+}
+.img-div img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
+.rotate-div .two{
+   margin-top:-8%;
+}
+.rotate-div .three{
+   margin-top:-12%;
+}
+.rotate-div .four{
+   margin-top:-15%;
+}
+.rotate-div .five{
+    margin-top:-20%;
+}
